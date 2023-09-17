@@ -1,0 +1,101 @@
+\documentclass[twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{lipsum}
+
+% enum without spaces
+\usepackage{enumitem}
+
+% bib URL for misc
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+
+% align equation to center
+\usepackage{amsmath}
+
+% euro symbol
+\usepackage[official]{eurosym}
+
+% picture H pin
+\usepackage{float}
+
+% font typefaces
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+
+% fancy chapter style
+\usepackage{titlesec, blindtext, color}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp{|}\hsp}{0pt}{\Huge\bfseries}
+
+
+% paragraph spacing
+\usepackage{parskip}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}
+
+% fix hyphenation issues
+\setlength{\emergencystretch}{3em}
+
+% colors
+\usepackage[dvipsnames]{xcolor}
+
+% citation hyperrefs
+\usepackage[hidelinks]{hyperref}
+
+
+\newgeometry{
+  top=2cm,
+  bottom=2cm,
+  left=3cm,
+  right=3cm
+}
+
+\begin{document}
+  \pagenumbering{gobble}
+
+  \thispagestyle{empty}
+
+  \begin{center}
+    \includegraphics[scale=.28]{data/fig_nak}
+    \\
+    \vspace{1.5 cm}
+    % {\Large \sc Term Paper}
+    \vspace{1.5 cm}
+    \hrule height 1 pt
+    \vspace{1.5 cm}
+    \LARGE  Report on Travel Declarations
+    \\
+    \vspace{.5 cm}
+    \normalsize \it -- Process Mining --
+    \vspace{1.5 cm}
+    \hrule height 1 pt
+  \end{center}
+
+  \vspace{5 cm}
+
+  \begin{center}
+    \begin{minipage}{.9\textwidth}
+    {\it Authors:}
+      \\
+      {\color{BlueViolet}
+      Marinus Mackensen, \\
+      Ivan Hubysh \\
+      }
+      \\
+      \vspace{1 cm}
+      \\
+      {\it Instructor:}
+      \\
+      {\color{BlueViolet} Prof. Dr. Henrik Leopold}
+    \end{minipage}
+    \\
+    \vspace{4cm}
+    September, 2023
+  \end{center}
+
+  \thispagestyle{empty}
+  \setcounter{page}{0}
+  \clearpage
+\end{document}
